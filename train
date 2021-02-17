@@ -1,0 +1,1 @@
+python3 samples/coco/coco.py train --dataset=/opt/ml/input/data/train/  --year=2017 --model=coco  --download=True --logs=/opt/ml/model 
