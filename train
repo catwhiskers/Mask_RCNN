@@ -1,1 +1,2 @@
+wget https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5 
 python3 samples/coco/coco.py train --dataset=/opt/ml/input/data/train/  --year=2017 --model=coco  --download=True --logs=/opt/ml/model 

@@ -46,7 +46,7 @@ fi
 # Get the login command from ECR and execute it directly
 $(aws ecr get-login --no-include-email --region us-west-2  --registry-ids 763104351884)
 
-docker build .  -t ${image} 
+docker build .  -t ${image} --no-cache 
 docker tag ${image} ${fullname}
 
 # Get the login command from ECR and execute it directly

@@ -7,5 +7,5 @@ RUN git clone https://github.com/catwhiskers/Mask_RCNN.git && cd Mask_RCNN && pi
 
 WORKDIR Mask_RCNN
 
-ENTRYPOINT train
+ENTRYPOINT ["/bin/bash", "train"]
 
